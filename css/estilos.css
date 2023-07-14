@@ -1,0 +1,88 @@
+/* Variables */
+:root{
+    --proyect-gray: rgba(220, 220, 220, 0.7);
+    --proyect-secondary-gray: rgba(100, 100,100, 0.7);
+    --primary-color: darkcyan;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--proyect-gray);
+    height: 100vh;
+}
+
+
+/*************************************************** nav section */
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0 20px 0;
+    width: 100%;
+    height: auto;
+    position: fixed;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding: 0 50px 0 50vh;
+}
+
+.nav ul li{
+    min-width: 130px;
+    padding: 15px;
+    margin: 0 15px;
+    border-radius: 10px;
+    color:darkcyan;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    box-shadow: -7px -7px 20px 0 rgba(255, 255, 255, 0.7), 7px 7px 20px 0 rgba(0, 0, 0, 0.2);
+    transition: all 1s;
+}
+.nav ul li:hover{
+    cursor: pointer;
+    box-shadow: inset -7px -7px 20px 0 rgba(255, 255, 255, 0.7), inset 7px 7px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.nav i{
+    padding: 10px 25px 0 0;
+    font-size: 30px;
+    color: var(--proyect-secondary-gray);
+    float: right;
+    transition: all 0.5;
+}
+.nav i:hover{
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+
+/************************************************** Img section */
+.imgsection{
+    position:relative;
+    top: 20vh;
+}
+.me{
+    display: flex;
+    justify-content: center;
+}
+.me img{
+    position: absolute;
+    top: 5vh;
+    /* bottom: 60vh; */
+    height: 250%;
+    border-radius: 40%;
+}
+.mebkg{
+    position:relative;
+    top:40vh;
+    height: 15vh;;
+    background: lightblue;
+}
