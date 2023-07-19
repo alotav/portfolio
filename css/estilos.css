@@ -10,11 +10,13 @@ body{
     margin: 0;
     padding: 0;
     background: var(--proyect-gray);
-    height: 100vh;
+    /* Cambar a 100vh */
+    height: 150vh; 
 }
 
 
 /*************************************************** nav section */
+
 .nav{
     display: flex;
     justify-content: flex-end;
@@ -51,16 +53,21 @@ body{
     box-shadow: inset -7px -7px 20px 0 rgba(255, 255, 255, 0.7), inset 7px 7px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
-.nav i{
+.open{
     padding: 10px 25px 0 0;
     font-size: 30px;
     color: var(--proyect-secondary-gray);
     float: right;
     transition: all 0.5;
 }
-.nav i:hover{
+.open:hover{
     cursor: pointer;
     color: var(--primary-color);
+}
+
+
+#btnMenuClose{
+    display: none;
 }
 
 
@@ -85,4 +92,55 @@ body{
     top:40vh;
     height: 15vh;;
     background: lightblue;
+}
+
+
+/*********************************   RESPONSIVE   **********************************/
+
+@media screen and (max-width:750px){
+    .nav{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding: 0;
+        z-index: 1000;
+        transition: all 0.3s;
+        /* Ocultamos */
+        transform: translateX(110%);
+    }
+
+    .nav-active{
+        transform: translateX(0%);
+    }
+
+    .nav ul{
+        flex-direction: column;
+        align-items: center;
+        /* margin: 10px; */
+        padding: 0;
+        width: 100%;
+    }
+
+    .nav ul li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        height: 25vh;
+    }
+
+    .nav ul li:hover{
+        text-decoration: underline;
+    }
+
+    .close{
+        position:absolute;
+        right: 1em;
+        top: 1em;
+    }
+
+    #btnMenuOpen{
+        display: none;
+    }
 }
