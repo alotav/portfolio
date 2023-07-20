@@ -1,3 +1,5 @@
+/* Fuente */
+@import url('https://fonts.googleapis.com/css2?family=Victor+Mono:wght@200&display=swap');
 /* Variables */
 :root{
     --proyect-gray: rgba(220, 220, 220, 0.7);
@@ -11,7 +13,8 @@ body{
     padding: 0;
     background: var(--proyect-gray);
     /* Cambar a 100vh */
-    height: 150vh; 
+    height: 100vh; 
+    font-family: 'Victor Mono', monospace;;
 }
 
 
@@ -23,7 +26,7 @@ body{
     padding: 20px 0 20px 0;
     width: 100%;
     height: auto;
-    position: fixed;
+    /* position: fixed; */
 }
 
 .nav ul{
@@ -53,39 +56,93 @@ body{
     box-shadow: inset -7px -7px 20px 0 rgba(255, 255, 255, 0.7), inset 7px 7px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
-.open{
+i, a{
     padding: 10px 25px 0 0;
     font-size: 30px;
     color: var(--proyect-secondary-gray);
     float: right;
     transition: all 0.5;
 }
-.open:hover{
+i, a:hover{
     cursor: pointer;
     color: var(--primary-color);
 }
 
 
-#btnMenuClose{
-    display: none;
+.close{
+    display: none !important;
+}
+
+.open{
+    display: none !important;
+}
+
+/************************************************** Home section  */
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 10em 0 10em 0;
+}
+
+.home h1{
+    font-weight:900;
+    font-size: 75px;
+    color: var(--primary-color);
+    
+}
+
+.home h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.home a{
+    width: 95%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--primary-color);
+    padding: 0.2em;
+    border-radius: 15px;
+    text-decoration: none;
 }
 
 
-/************************************************** Img section */
+
+/************************************************** About Section */
+
+.about{
+    height: 100vh;
+}
+
 .imgsection{
     position:relative;
     top: 20vh;
 }
 .me{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
+.me div{
+    position:absolute;
+    padding: 0 15% 0 30%;
+
+}
+
 .me img{
     position: absolute;
     top: 5vh;
     /* bottom: 60vh; */
     height: 250%;
     border-radius: 40%;
+    margin-left: 3em;
 }
 .mebkg{
     position:relative;
@@ -94,10 +151,32 @@ body{
     background: lightblue;
 }
 
+/************************************************** Skills section */
+
+.skills{
+    height: 100vh;
+}
+
+.tec{
+    margin-top: 7em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+.tec div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tec img{
+    height: 100px;
+}
+
 
 /*********************************   RESPONSIVE   **********************************/
 
-@media screen and (max-width:750px){
+@media screen and (max-width:850px){
     .nav{
         position: fixed;
         top: 0;
@@ -138,9 +217,19 @@ body{
         position:absolute;
         right: 1em;
         top: 1em;
+        display: inherit !important;
     }
 
-    #btnMenuOpen{
-        display: none;
+    .open{
+        position:absolute;
+        right: 1em;
+        top: 1em;
+        display:inherit !important;
     }
+
+
+    .hide{
+        display: none !important;
+    }
+
 }
