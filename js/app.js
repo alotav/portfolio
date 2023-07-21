@@ -18,23 +18,34 @@ btnOpen.addEventListener("click", function(){
 
 // Slider:
 
-
-
+// Projects lider
 let sliderInner = document.querySelector(".slider--inner");
 let sliderImg = document.querySelectorAll(".slider--inner img");
 let totalImg = sliderImg.length;
-console.log(totalImg);
+// console.log(totalImg);
+let time = 3000;
 let index = 0;
 
 setInterval(function(){
     let porcentage = index * -100;
 
-    sliderInner.style.transform = `translate(${porcentage}%)`;
+    sliderInner.style.transform = `translateX(${porcentage}%)`;
 
     index ++;
 
     if(index >= totalImg){
-        index = 0;
+        index = 1;
     }
+}, time);
 
-}, 3000);
+
+// Description slider:
+
+let sliderInnerDesc = document.querySelector(".description-inner");
+// let sliderSection = document.querySelectorAll(".section");
+// let totalSection = sliderSection.length;
+
+setInterval(function(){
+    let porcentage = index  * -50;
+    sliderInnerDesc.style.transform = `translateY(${porcentage}vh)`;
+},time)

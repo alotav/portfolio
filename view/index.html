@@ -1,124 +1,197 @@
 <!DOCTYPE html>
 <html lang="sp">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="stylesheet" href="../lib/fontawesome-free-6.4.0-web/css/all.min.css">
-    <link rel="shortcut icon" href="../img/me.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <link
+      rel="stylesheet"
+      href="../lib/fontawesome-free-6.4.0-web/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="../img/me.png" />
     <title>Alonso Taverna</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav>
+      <i class="fa-solid fa-bars open" id="btnMenuOpen"></i>
+      <div class="nav nav-active" id="nav">
+        <ul>
+          <li><span>Home</span></li>
+          <li><span>About</span></li>
+          <li><span>Portfolio</span></li>
+          <li><span>Skills</span></li>
+          <li><span>Contacto</span></li>
+        </ul>
+
+        <i class="fa-solid fa-angles-right close" id="btnMenuClose"></i>
+      </div>
+    </nav>
+
     <div class="container">
+      <!-- HOME -->
 
-        <!-- NAV -->
+      <div class="home">
+        <div>
+          <h1>Alonso Taverna</h1>
+          <h3>Full Stack Dev.</h3>
+          <a
+            href="https://drive.google.com/file/d/1VMLvT7FFgyJrAfpsjOk-IBYBdYKRy5OF/view?usp=sharing"
+            >Descargar CV</a
+          >
+        </div>
+      </div>
 
-        <i class="fa-solid fa-bars open" id="btnMenuOpen"></i>
-            <div class="nav nav-active" id="nav">
-                
-                    <ul>
-                        <li><span>Home</span></li>
-                        <li><span>About</span></li>
-                        <li><span>Portfolio</span></li>
-                        <li><span>Skills</span></li>
-                        <li><span>Contacto</span></li>
-                    </ul>
-                
-                <i class="fa-solid fa-angles-right close" id="btnMenuClose"></i>
-            </div>
+      <!-- ABOUT -->
 
-        <!-- HOME -->
+      <div class="about">
+        <div class="imgsection">
+          <div class="mebkg"></div>
 
-        <div class="home">
+          <div class="me">
+            <img src="../img/PNG/me.png" alt="" />
             <div>
-                <h1>Alonso Taverna</h1>
-                <h3>Full Stack Dev.</h3>
-                <a href="https://drive.google.com/file/d/1VMLvT7FFgyJrAfpsjOk-IBYBdYKRy5OF/view?usp=sharing">Descargar CV</a>
+              <h3>Sobre mi</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus, itaque qui? Saepe doloribus quas quidem labore!
+                Itaque harum ipsa, enim aut consectetur ratione repellendus
+                natus similique fuga quis alias ipsam?
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam
+                dignissimos fugit eos veritatis in inventore iusto mollitia eum
+                omnis? Molestias qui consequuntur magni? Exercitationem libero
+                doloribus fugiat perspiciatis asperiores expedita?
+              </p>
+              <div>
+                <a href="https://www.linkedin.com/in/alonso-taverna-903266192/"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a href="https://github.com/alotav"
+                  ><i class="fa-brands fa-square-github"></i
+                ></a>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
 
+      <!-- SKILLS -->
 
-        <!-- ABOUT -->
+      <div class="skills">
+        <div class="sk">
+          <div>
+            <h1>SKILLS</h1>
+          </div>
 
-        <div class="about">
-            <div class="imgsection">
-                <div class="mebkg"></div>
+          <div class="tec">
+            <div>HTML<img src="../img/PNG/HTML5.png" /></div>
+            <div>CSS3<img src="../img/PNG/CSS3.png" /></div>
+            <div>Bootstrap<img src="../img/PNG/bootstrap.png" /></div>
+            <div>JavaScript<img src="../img/PNG/JS.png" /></div>
+            <div>Python<img src="../img/PNG/python.png" /></div>
+            <div>Django<img src="../img/PNG/django.png" /></div>
+            <div>PostgreSQL<img src="../img/PNG/postgres.png" /></div>
+            <div>GitHub<img src="../img/PNG/github.png" /></div>
+          </div>
+        </div>
+      </div>
 
-                <div class="me">
-                    <img src="../img/PNG/me.png" alt="">
-                    <div>
-                        <h3>Sobre mi</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, itaque qui? Saepe doloribus quas quidem labore! Itaque harum ipsa, enim aut consectetur ratione repellendus natus similique fuga quis alias ipsam?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam dignissimos fugit eos veritatis in inventore iusto mollitia eum omnis? Molestias qui consequuntur magni? Exercitationem libero doloribus fugiat perspiciatis asperiores expedita?</p>
-                        <div>
-                            <a href="https://www.linkedin.com/in/alonso-taverna-903266192/"><i class="fa-brands fa-linkedin"></i></a>
-                            <a href="https://github.com/alotav"><i class="fa-brands fa-square-github"></i></a>
-                        </div>
-                    </div>
-                </div>
+      <!-- PORTFOLIO -->
 
+      <div class="portfolio">
+        <h1>PROYECTOS</h1>
+
+        <div class="slider-section">
+          <!-- Description Slider -->
+          <div class="description">
+            <div class="description-inner">
+              <div>
+                <h3>CPFSJ</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Praesentium repellat non velit aperiam magnam, commodi
+                  provident libero beatae ex obcaecati quam maxime suscipit enim
+                  facere, minima quidem tempora, numquam amet? Lorem ipsum dolor
+                  sit amet consectetur adipisicing elit. Voluptates quam quasi
+                  expedita aliquid amet iusto numquam nihil dicta quia, nam,
+                  doloribus ullam error neque. Nostrum incidunt assumenda ullam
+                  voluptatibus quasi!
+                </p>
+              </div>
+
+              <div>
+                <h3>Pizza World</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Praesentium repellat non velit aperiam magnam, commodi
+                  provident libero beatae ex obcaecati quam maxime suscipit enim
+                  facere, minima quidem tempora, numquam amet? Lorem ipsum dolor
+                  sit amet consectetur adipisicing elit. Voluptates quam quasi
+                  expedita aliquid amet iusto numquam nihil dicta quia, nam,
+                  doloribus ullam error neque. Nostrum incidunt assumenda ullam
+                  voluptatibus quasi!
+                </p>
+              </div>
+
+              <div>
+                <h3>Tecno Market</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Praesentium repellat non velit aperiam magnam, commodi
+                  provident libero beatae ex obcaecati quam maxime suscipit enim
+                  facere, minima quidem tempora, numquam amet? Lorem ipsum dolor
+                  sit amet consectetur adipisicing elit. Voluptates quam quasi
+                  expedita aliquid amet iusto numquam nihil dicta quia, nam,
+                  doloribus ullam error neque. Nostrum incidunt assumenda ullam
+                  voluptatibus quasi!
+                </p>
+              </div>
+
+              <div>
+                <h3>Gestion de Envios</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Praesentium repellat non velit aperiam magnam, commodi
+                  provident libero beatae ex obcaecati quam maxime suscipit enim
+                  facere, minima quidem tempora, numquam amet? Lorem ipsum dolor
+                  sit amet consectetur adipisicing elit. Voluptates quam quasi
+                  expedita aliquid amet iusto numquam nihil dicta quia, nam,
+                  doloribus ullam error neque. Nostrum incidunt assumenda ullam
+                  voluptatibus quasi!
+                </p>
+              </div>
+
+              <div>
+                <h3>Task Mngr</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Praesentium repellat non velit aperiam magnam, commodi
+                  provident libero beatae ex obcaecati quam maxime suscipit enim
+                  facere, minima quidem tempora, numquam amet? Lorem ipsum dolor
+                  sit amet consectetur adipisicing elit. Voluptates quam quasi
+                  expedita aliquid amet iusto numquam nihil dicta quia, nam,
+                  doloribus ullam error neque. Nostrum incidunt assumenda ullam
+                  voluptatibus quasi!
+                </p>
+              </div>
             </div>
-        </div>
+          </div>
 
-
-
-        <!-- SKILLS -->
-
-        <div class="skills">
-
-            <div class="sk">
-                <div>
-                    <H1>SKILLS</H1>
-                </div>
-                
-                <div class="tec">
-                    <div >HTML<img src="../img/PNG/HTML5.png"></div>
-                    <div>CSS3<img src="../img/PNG/CSS3.png"></div>
-                    <div>Bootstrap<img src="../img/PNG/bootstrap.png"></div>
-                    <div>JavaScript<img src="../img/PNG/JS.png"></div>
-                    <div>Python<img src="../img/PNG/python.png"></div>
-                    <div>Django<img src="../img/PNG/django.png"></div>
-                    <div>PostgreSQL<img src="../img/PNG/postgres.png"></div>
-                    <div>GitHub<img src="../img/PNG/github.png"></div>
-                </div>
+          <div class="slider">
+            <div class="slider--inner">
+              <img src="../img/IMG_SLIDER/CPFSJ.png" alt="" />
+              <img src="../img/IMG_SLIDER/worldpizza.png" alt="" />
+              <img src="../img/IMG_SLIDER/tecnomarket.png" alt="" />
+              <img src="../img/IMG_SLIDER/pedidos.png" alt="" />
+              <img src="../img/IMG_SLIDER/taskapp.png" alt="" />
             </div>
-
+          </div>
         </div>
-
-        <!-- PORTFOLIO -->
-
-        <div class="portfolio">
-
-            <H1>PROYECTOS</H1>
-            
-            <div class="slider-section">
-                
-                <div class="description">
-                    <h3>ProyectName</h3>
-                    
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium repellat non velit aperiam magnam, commodi provident libero beatae ex obcaecati quam maxime suscipit enim facere, minima quidem tempora, numquam amet?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quam quasi expedita aliquid amet iusto numquam nihil dicta quia, nam, doloribus ullam error neque. Nostrum incidunt assumenda ullam voluptatibus quasi!
-                    </p>
-                </div>
-
-
-
-                <div class="slider">
-                    <div class="slider--inner">
-                        <img src="../img/IMG_SLIDER/CPFSJ.png" alt="">
-                        <img src="../img/IMG_SLIDER/worldpizza.png" alt="">
-                        <img src="../img/IMG_SLIDER/tecnomarket.png" alt="">
-                        <img src="../img/IMG_SLIDER/pedidos.png" alt="">
-                        <img src="../img/IMG_SLIDER/taskapp.png" alt="">
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-
+      </div>
     </div>
 
-    <script src="../js/app.js">  </script>
-</body>
+    <script src="../js/app.js"></script>
+  </body>
 </html>

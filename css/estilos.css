@@ -20,13 +20,19 @@ body{
 
 /*************************************************** nav section */
 
+#nav{
+    opacity: 100%;
+    position: fixed;
+    z-index: 100;
+    /* background-color: var(--proyect-secondary-gray) */
+}
+
 .nav{
     display: flex;
     justify-content: flex-end;
     padding: 20px 0 20px 0;
     width: 100%;
     height: auto;
-    /* position: fixed; */
 }
 
 .nav ul{
@@ -207,7 +213,6 @@ i, a:hover{
 
 .slider--inner{
     display: flex;
-    /* width: 50%; */
     flex-direction: row;
     flex-wrap: nowrap;
     transition: all 0.3s;
@@ -225,11 +230,27 @@ i, a:hover{
     align-items: initial;
 }
 
-.slider-section .description{
-    padding: 7em 2em 0 2em;
-    width: 50%;
+
+/* Description Slider */
+.description{
+    /* padding: 7em 2em 0 2em; */
+    overflow: hidden;
+    max-width: 50%;
+    height: 50vh;
 }
 
+
+.description-inner{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transition: all 0.3s;
+    align-items: center;
+}
+
+.description-inner div{
+    height: 50vh;
+}
 
 
 /*********************************   RESPONSIVE   **********************************/
