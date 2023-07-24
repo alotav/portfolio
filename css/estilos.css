@@ -1,5 +1,7 @@
 /* Fuente */
-@import url('https://fonts.googleapis.com/css2?family=Victor+Mono:wght@200&display=swap');
+@import url('../lib/Font/RobotoMono-VariableFont_wght.ttf');
+
+
 /* Variables */
 :root{
     --project-gray: rgba(220, 220, 220, 0.7);
@@ -13,7 +15,7 @@ body{
     margin: 0;
     padding: 0;
     background: var(--project-gray);
-    height: 100vh; 
+    /* height: 100vh; */
     font-family: 'Victor Mono', monospace;;
 }
 
@@ -24,6 +26,7 @@ body{
     opacity: 100%;
     position: fixed;
     z-index: 1000;
+    font-weight: 900;
 }
 
 .nav{
@@ -45,6 +48,7 @@ body{
 }
 
 .nav ul li{
+    transition: all 1s !important;
     min-width: 130px;
     padding: 15px;
     margin: 0 15px;
@@ -55,8 +59,8 @@ body{
     display: inline-block;
     text-align: center;
     box-shadow: -7px -7px 20px 0 rgba(255, 255, 255, 0.7), 7px 7px 20px 0 rgba(0, 0, 0, 0.2);
-    transition: all 1s;
 }
+
 .nav ul li:hover{
     cursor: pointer;
     box-shadow: inset -7px -7px 20px 0 rgba(255, 255, 255, 0.7), inset 7px 7px 20px 0 rgba(0, 0, 0, 0.2);
@@ -102,6 +106,7 @@ i, a:hover{
 
 .home h3{
     display: flex;
+    color: var(--project-secondary-gray);
     justify-content: center;
     align-items: center;
     font-weight: 700;
@@ -118,6 +123,12 @@ i, a:hover{
     padding: 0.2em;
     border-radius: 15px;
     text-decoration: none;
+    transition: all 0.5s;
+}
+
+.home a:hover{
+    background-color: var(--primary-color);
+    color: var(--project-gray);
 }
 
 
@@ -164,7 +175,12 @@ i, a:hover{
     margin: 0 0 0 2em;
 }
 
-.skills .sk h1{
+.sk{
+    height: 100%;
+    max-width: 100%;
+}
+
+.sk h1{
     font-weight:900;
     font-size: 75px;
     color: var(--primary-color);
@@ -176,7 +192,7 @@ i, a:hover{
     font-weight:900;
     margin-top: 3em;
     display: grid;
-    grid-template-columns: minmax(200px, 400px) minmax(200px, 400px);
+    grid-template-columns: minmax(200px, 400px) minmax(200px, 400px) minmax(200px, 400px);
     grid-gap: 40px;
 }
 .tec div{
@@ -194,10 +210,6 @@ i, a:hover{
 }
 
 
-/* .tec img:hover{
-    translate: 1em;
-} */
-
 .tec div:hover{
     translate: 2em;
 }
@@ -206,7 +218,7 @@ i, a:hover{
 
 .portfolio{
     height: 100vh;
-    margin-top: 6em;
+    margin-top: 8em;
 }
 
 .portfolio h1{
@@ -291,6 +303,30 @@ footer li{
 .footer div{
     display: flex;
 }
+
+
+/************************************************** Effect container */
+
+.effect{
+    overflow: hidden;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.effect span{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    transition: all 1s;
+    z-index: -100;
+    color: #909090;
+    color: #c0b8b8;
+    color:#cdcdcd;
+}
+
 
 /*********************************   RESPONSIVE   **********************************/
 
