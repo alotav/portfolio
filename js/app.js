@@ -23,29 +23,26 @@ let sliderInner = document.querySelector(".slider--inner");
 let sliderImg = document.querySelectorAll(".slider--inner img");
 let totalImg = sliderImg.length;
 // console.log(totalImg);
+
+let sliderInnerDesc = document.querySelector(".description-inner");
+
+
 let time = 3000;
+let time2;
 let index = 0;
 
 setInterval(function(){
+    // Image
     let porcentage = index * -100;
-
     sliderInner.style.transform = `translateX(${porcentage}%)`;
+    // Description
+    let porcentage2 = index  * -50;
+    sliderInnerDesc.style.transform = `translateY(${porcentage2}vh)`;
+
 
     index ++;
 
     if(index >= totalImg){
-        index = 1;
+        index = 0;
     }
 }, time);
-
-
-// Description slider:
-
-let sliderInnerDesc = document.querySelector(".description-inner");
-// let sliderSection = document.querySelectorAll(".section");
-// let totalSection = sliderSection.length;
-
-setInterval(function(){
-    let porcentage = index  * -50;
-    sliderInnerDesc.style.transform = `translateY(${porcentage}vh)`;
-},time)

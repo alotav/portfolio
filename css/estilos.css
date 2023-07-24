@@ -2,8 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Victor+Mono:wght@200&display=swap');
 /* Variables */
 :root{
-    --proyect-gray: rgba(220, 220, 220, 0.7);
-    --proyect-secondary-gray: rgba(100, 100,100, 0.7);
+    --project-gray: rgba(220, 220, 220, 0.7);
+    --project-solid-gray: rgba(220, 220, 220, 1);
+    --project-secondary-gray: rgba(100, 100,100, 0.7);
     --primary-color: darkcyan;
 }
 
@@ -11,8 +12,7 @@
 body{
     margin: 0;
     padding: 0;
-    background: var(--proyect-gray);
-    /* Cambar a 100vh */
+    background: var(--project-gray);
     height: 100vh; 
     font-family: 'Victor Mono', monospace;;
 }
@@ -23,12 +23,12 @@ body{
 #nav{
     opacity: 100%;
     position: fixed;
-    z-index: 100;
-    /* background-color: var(--proyect-secondary-gray) */
+    z-index: 1000;
 }
 
 .nav{
     display: flex;
+    background-color: var(--project-solid-gray);
     justify-content: flex-end;
     padding: 20px 0 20px 0;
     width: 100%;
@@ -65,7 +65,7 @@ body{
 i, a{
     padding: 10px 25px 0 0;
     font-size: 30px;
-    color: var(--proyect-secondary-gray);
+    color: var(--project-secondary-gray);
     float: right;
     transition: all 0.5;
 }
@@ -161,6 +161,7 @@ i, a:hover{
 
 .skills{
     height: 100vh;
+    margin: 0 0 0 2em;
 }
 
 .skills .sk h1{
@@ -172,12 +173,14 @@ i, a:hover{
 .tec{
     display: flex;
     justify-content: center;
+    font-weight:900;
     margin-top: 3em;
     display: grid;
     grid-template-columns: minmax(200px, 400px) minmax(200px, 400px);
     grid-gap: 40px;
 }
 .tec div{
+    transition: all 0.5s;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -187,13 +190,23 @@ i, a:hover{
 
 .tec img{
     height: 100px;
+    transition: all 0.5s;
 }
 
+
+/* .tec img:hover{
+    translate: 1em;
+} */
+
+.tec div:hover{
+    translate: 2em;
+}
 
 /************************************************** Portfolio section */
 
 .portfolio{
     height: 100vh;
+    margin-top: 6em;
 }
 
 .portfolio h1{
@@ -233,7 +246,8 @@ i, a:hover{
 
 /* Description Slider */
 .description{
-    /* padding: 7em 2em 0 2em; */
+    margin: 3em 0 0 2em;
+    display: block;
     overflow: hidden;
     max-width: 50%;
     height: 50vh;
@@ -252,6 +266,31 @@ i, a:hover{
     height: 50vh;
 }
 
+/************************************************** Footer section */
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--project-solid-gray);
+}
+
+footer li{
+    list-style: none;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10%;
+    padding: 1em 0 3em 0;
+    margin: 0;
+    width: 70%;
+}
+
+.footer div{
+    display: flex;
+}
 
 /*********************************   RESPONSIVE   **********************************/
 
