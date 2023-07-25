@@ -26,7 +26,7 @@ let totalImg = sliderImg.length;
 
 let sliderInnerDesc = document.querySelector(".description-inner");
 
-let time = 3000;
+let time = 10000;
 let time2;
 let index = 0;
 

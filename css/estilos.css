@@ -142,6 +142,10 @@ i, a:hover{
     padding-top: 2em;
 }
 
+.me h3{
+    color: var(--primary-color);
+}
+
 .imgsection{
     position:relative;
     top: 20vh;
@@ -169,6 +173,10 @@ i, a:hover{
     top:40vh;
     height: 15vh;;
     background: lightblue;
+}
+
+.divme{
+    padding: 0 !important;
 }
 
 /************************************************** Skills section */
@@ -269,7 +277,7 @@ i, a:hover{
 
 /* Description Slider */
 .description{
-    margin: 3em 0 0 2em;
+    margin: 3em 2em 2em 2em;
     display: block;
     overflow: hidden;
     max-width: 50%;
@@ -279,8 +287,10 @@ i, a:hover{
 
 .description-inner{
     display: flex;
+    margin: 0 0 0 2em !important;
     flex-direction: column;
-    width: 100%;
+    justify-content: center;
+    width: 90%;
     transition: all 0.3s;
     align-items: center;
 }
@@ -292,6 +302,7 @@ i, a:hover{
 /************************************************** Footer section */
 
 footer{
+    margin-top: 5em;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -315,6 +326,27 @@ footer li{
     display: flex;
 }
 
+footer a{
+    display: flex;
+    text-decoration: none;
+    font-size: medium;
+    color: black;
+    
+}
+
+footer .fa-envelope:hover,
+footer .fa-mobile:hover{
+    cursor:default !important;
+}
+
+.git:hover,
+.link:hover{
+    cursor: pointer;
+}
+
+.git{
+    padding-right: 1.1em;
+}
 
 /************************************************** Effect container */
 
@@ -359,7 +391,6 @@ footer li{
     .nav ul{
         flex-direction: column;
         align-items: center;
-        /* margin: 10px; */
         padding: 0;
         width: 100%;
     }
