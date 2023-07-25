@@ -15,10 +15,12 @@ body{
     margin: 0;
     padding: 0;
     background: var(--project-gray);
-    /* height: 100vh; */
-    font-family: 'Victor Mono', monospace;;
+    font-family: 'Victor Mono', monospace;
 }
 
+html {
+    scroll-behavior: smooth; /* Agregar la transición de desplazamiento */
+}
 
 /*************************************************** nav section */
 
@@ -137,6 +139,7 @@ i, a:hover{
 
 .about{
     height: 100vh;
+    padding-top: 2em;
 }
 
 .imgsection{
@@ -173,6 +176,7 @@ i, a:hover{
 .skills{
     height: 100vh;
     margin: 0 0 0 2em;
+    padding-top: 2em;
 }
 
 .sk{
@@ -181,6 +185,9 @@ i, a:hover{
 }
 
 .sk h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight:900;
     font-size: 75px;
     color: var(--primary-color);
@@ -219,9 +226,13 @@ i, a:hover{
 .portfolio{
     height: 100vh;
     margin-top: 8em;
+    padding-top: 2em;
 }
 
 .portfolio h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight:900;
     font-size: 75px;
     color: var(--primary-color);
@@ -309,9 +320,8 @@ footer li{
 
 .effect{
     overflow: hidden;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+    height: 400vh;
+    z-index: 100;
 }
 
 .effect span{
