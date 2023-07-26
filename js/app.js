@@ -71,6 +71,7 @@ sw.addEventListener("click", (darkMode) => {
 
     btnLight.classList.remove("fa-solid");
     btnLight.classList.remove("fa-toggle-off");
+    btnLight.classList.add("disappear");
   } else {
     darkMode = false;
     console.log(darkMode);
