@@ -27,6 +27,12 @@ html {
   scroll-behavior: smooth; /* Agregar la transición de desplazamiento */
 }
 
+.container{
+  width: 100%;
+  overflow: hidden;
+}
+
+
 /*************************************************** nav section */
 
 #nav {
@@ -459,8 +465,7 @@ footer .fa-mobile:hover {
 
 .effect {
   overflow: hidden;
-  /* max-width: 90%; */
-  height: 400vh;
+  height: auto;
   z-index: 100;
 }
 
@@ -508,7 +513,7 @@ footer .fa-mobile:hover {
     align-items: center;
     width: 100%;
     padding: 0;
-    height: 25vh;
+    height: 18.6vh;
   }
 
   .nav ul li:hover {
@@ -527,9 +532,14 @@ footer .fa-mobile:hover {
   }
 
   .open {
-    position: absolute;
+    /* position: absolute; */
+    padding: 1px;
+    border-radius: 7px;
+    position: fixed;
     right: 1em;
     top: 1em;
+    z-index: 1000 !important;
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
     display: inherit !important;
   }
 

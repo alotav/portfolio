@@ -11,15 +11,24 @@ let btnOpen = document.getElementById("btnMenuOpen"),
 
 // Close click:
 btnClose.addEventListener("click", function () {
-  navResponsive.classList.remove("nav-active");
+  navResponsive.classList.toogle("nav-active");
   btnOpen.classList.remove("hide");
 });
 
 // Open click:
 btnOpen.addEventListener("click", function () {
   navResponsive.classList.add("nav-active");
-  btnOpen.classList.add("hide");
+    // btnOpen.classList.add("hide");
 });
+
+
+// Redirect Hide:
+
+navResponsive.addEventListener('click', function(){
+  navResponsive.classList.toggle("nav-active");
+})
+
+
 
 /////////////// Slider:
 
@@ -89,15 +98,9 @@ const figure = (colors, darkColors) => {
   for (let i = 0; i <= 10; i++) {
     let figure = document.createElement("span");
     let select = Math.round(colors.length * Math.random());
-    // let select2 = Math.round(darkColors.length * Math.random());
 
-    // if(document.body.classList.contains('dark')){
-    //   figure.style.background =
-    //   darkColors[select2 > darkColors.length ? select2 - 1 : select2];
-    // }else{
     figure.style.background =
       colors[select > colors.length ? select - 1 : select];
-    // }
 
     //position box
     figure.style.top = innerHeight * Math.random() + "px";
@@ -107,7 +110,7 @@ const figure = (colors, darkColors) => {
 
     setInterval(() => {
       figure.style.top = innerHeight * Math.random() + "px";
-      figure.style.left = innerWidth * Math.random() + "px";
+      figure.style.left = innerWidth * Math.random() -75 + "px";
     }, 7000);
   }
 };
