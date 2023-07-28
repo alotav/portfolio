@@ -12,7 +12,7 @@ let btnOpen = document.getElementById("btnMenuOpen"),
 // Close click:
 btnClose.addEventListener("click", function () {
   navResponsive.classList.toogle("nav-active");
-  btnOpen.classList.remove("hide");
+  btnOpen.classList.toogle("hide");
 });
 
 // Open click:
