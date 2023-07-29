@@ -548,20 +548,30 @@ footer .fa-mobile:hover {
     display: none !important;
   }
 
-  .skills{
+  .skills {
     padding-top: 0 !important;
   }
 
-  .portfolio{
+  .portfolio {
     padding-top: 0 !important;
   }
-
 }
 
 /*********************** RESPONSIVE < 950 PX */
 
-
 @media screen and (max-width: 950px) {
+  body p {
+    font-size: small !important;
+  }
+
+  /* HOME */
+
+  .home h1 {
+    font-size: 50px;
+  }
+  .home div {
+    padding-top: 7em;
+  }
 
   .imgsection .me {
     display: flex;
@@ -573,7 +583,8 @@ footer .fa-mobile:hover {
   .me div {
     position: absolute;
     top: 12em;
-    padding-left: 10em;
+    width: 80%;
+    padding-left: 6em;
   }
 
   .me h3 {
@@ -584,22 +595,70 @@ footer .fa-mobile:hover {
   .me img {
     position: relative;
     left: 1em;
-    top: -11em;
+    top: -20em;
     height: 300px;
   }
 
   .mebkg {
     position: relative;
-    top: 25.5vh;
-    height: 15vh;
+    top: 20vh;
+    height: 29.5vh;
     background: lightblue;
   }
 
-  .divme a{
-    padding-top: 2em;
+  .divme a {
+    padding: 4em 5em 0 0;
+  }
+  .divme {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+/*********************** RESPONSIVE < 650 PX */
+
+@media screen and (max-width: 950px) {
+  .tec {
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: minmax(100px, 350px) minmax(100px, 350px) minmax(
+        100px,
+        350px
+      );
+    grid-gap: 40px;
   }
 
-  /* .skills{
-    padding-top: 0 !important;
-  } */
+  /* .tec div {
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+   */
+  .tec img {
+    height: 80px;
+    transition: all 0.5s;
+  }
+
+  .tec div:hover {
+    translate: 2em;
+  }
+
+.sk{
+  padding-top: 5em;
+}
+.sk h1{
+  font-size: 50px;
+}
+
+.portfolio h1{
+  padding-top: 3em;
+  font-size: 50px;
+}
+
+
 }
