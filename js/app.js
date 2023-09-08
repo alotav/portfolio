@@ -37,7 +37,6 @@ let sliderInner = document.querySelector(".slider--inner");
 let sliderImg = document.querySelectorAll(".slider--inner img");
 let totalImg = sliderImg.length;
 // console.log(totalImg);
-
 let sliderInnerDesc = document.querySelector(".description-inner");
 
 let time = 10000;
@@ -58,6 +57,43 @@ setInterval(function () {
     index = 0;
   }
 }, time);
+
+// ARROWS PORTFOLIO
+let arrowRight = document.querySelector(".arrowRight");
+let arrowLeft = document.querySelector(".arrowLeft");
+
+arrowLeft.addEventListener("click", () => {
+
+  if (index < 1){
+    index = totalImg;
+  }
+  index --;
+  let porcentage = index * -100;
+  sliderInner.style.transform = `translateX(${porcentage}%)`;
+  // Description
+  let porcentage2 = index * -50;
+  sliderInnerDesc.style.transform = `translateY(${porcentage2}vh)`;
+  // console.log("Click");
+});
+
+arrowRight.addEventListener("click", () => {
+
+  if (index >= totalImg){
+    index = 0;
+  }
+  
+  let porcentage = index * -100;
+  sliderInner.style.transform = `translateX(${porcentage}%)`;
+  // Description
+  let porcentage2 = index * -50;
+  sliderInnerDesc.style.transform = `translateY(${porcentage2}vh)`;
+  index ++;
+  // console.log("Click");
+});
+
+// arrowLeft.addEventListener("click", () => {
+//   sliderInner.style.transform = `translateX(${porcentage}%)`;
+// });
 
 //////////////// Dark/Light mode:
 

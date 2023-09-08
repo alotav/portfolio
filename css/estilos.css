@@ -371,6 +371,29 @@ a:hover {
   flex-wrap: wrap;
   max-width: 635px;
 }
+/* Slider Arrows */
+.arrowRight{
+  position: absolute;
+  margin-left: 38%;
+  margin-top: 11%;
+  z-index:1;
+}
+.arrowLeft{
+  position: absolute;
+  margin-left: 2%;
+  margin-top: 11%;
+  z-index:1;
+}
+.arrowLeft, 
+.arrowRight{
+  padding: 4px;
+  border-radius: 5px;
+  background-color: var(--project-secondary-gray);
+}
+.arrowLeft:hover, 
+.arrowRight:hover{
+  background-color: var(--project-gray);
+}
 
 .slider--inner {
   display: flex;
@@ -624,6 +647,7 @@ footer .fa-mobile:hover {
     margin-top: 0 !important;
     height: auto !important;
     width: auto;
+    margin: 0 3rem 0 3rem;
     position: relative;
     bottom: 10em;
   }
@@ -635,6 +659,20 @@ footer .fa-mobile:hover {
   overflow: hidden;
   max-width: 800%;
   height: 50vh;
+}
+
+/* Slider Arrows */
+.arrowRight{
+  position: absolute;
+  margin-left: 90%;
+  margin-top: 25%;
+  z-index:1;
+}
+.arrowLeft{
+  position: absolute;
+  margin-left: 2%;
+  margin-top: 25%;
+  z-index:1;
 }
 
 }
