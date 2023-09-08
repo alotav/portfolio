@@ -368,6 +368,8 @@ a:hover {
   height: 50vh;
   margin-top: 3em;
   width: 50%;
+  flex-wrap: wrap;
+  max-width: 635px;
 }
 
 .slider--inner {
@@ -375,7 +377,7 @@ a:hover {
   flex-direction: row;
   flex-wrap: nowrap;
   transition: all 0.3s;
-  align-items: center;
+  align-items: center;  
 }
 
 .slider--inner img {
